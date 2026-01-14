@@ -1,0 +1,7 @@
+body{
+    background-color: #f5f5f5;
+}
+h2, p, div, label, input{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+}
