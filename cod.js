@@ -35,10 +35,13 @@ function calcola(num, somma, prodotto){
     for (let i = 0; i < num.length; i++){
         nume.push(parseInt(document.getElementById(num[i]).value));
     }
-    for (let i = 1; i <nume.length; i += 2){
-        somma += nume[i];
+    for (let valore of nume) {
+        if (valore % 2 === 0) {
+            somma += valore;
+        }
     }
-    for (let i = 0; i <nume.length; i += 2){
+    for (let i in nume){
+        if(i % 2 == 1)
         prodotto *= nume[i];
     }
     document.getElementById("ris").innerHTML = "La somma dei numeri in posizione pari è :" + somma
